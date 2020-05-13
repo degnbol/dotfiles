@@ -1,3 +1,4 @@
+# basic file exploring
 alias ls='exa'
 alias ll='exa -l'
 alias la='exa -a'
@@ -6,5 +7,18 @@ alias lal='exa -la'
 
 alias l='less -S'
 
+
+# git
+alias 'gits'='git status -uno'
+alias 'gita'='git add'
+alias 'gitr'='git remove'
+alias 'gitam'='git add `git status --short -uno | grep "^.M" | cut -c4- `'
+alias 'gitc'='git commit -m'
+
+### the rest are debian specific
+
 # mount macos
 alias macos='sudo ./apfs-fuse -o allow_other /dev/nvme0n1p2 /media/degnbol/macos'
+
+# clipboard
+alias clip='xclip -sel clip'

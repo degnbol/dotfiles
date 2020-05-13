@@ -22,6 +22,8 @@ antigen bundle unixorn/autoupdate-antigen.zshplugin
 # Load the theme.
 antigen theme romkatv/powerlevel10k
 
+antigen bundle ael-code/zsh-colored-man-pages
+
 # Tell Antigen that you're done.
 antigen apply
 
