@@ -1,0 +1,9 @@
+exa
+neovim
+git
+zsh
+oh-my-zsh
+antigen
+powerline
+p10k
+miniconda3
