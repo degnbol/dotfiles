@@ -41,6 +41,9 @@ HISTSIZE=5000
 SAVEHIST=10000
 setopt autocd
 # End of lines configured by zsh-newuser-install
+
+export EDITOR=nvim
+
 # vi prompt keybindings that are copied from normal emacs input. This is relevant since we are using vi-mode with antigen
 source ~/.bindvi
 
