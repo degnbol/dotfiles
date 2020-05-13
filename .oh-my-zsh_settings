@@ -85,3 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# this moves the powerline at the right 1 column to the right removing a gap that was there before.
+ZLE_RPROMPT_INDENT=0
+
