@@ -4,6 +4,9 @@ sudo cp sources.list /etc/apt/
 sudo apt update
 sudo apt upgrade
 
+# generate locale for DK standards so they are available for use.
+sudo locale-gen en_DK.UTF-8
+
 sudo apt install curl wget
 sudo apt install python-pip python3-pip
 
