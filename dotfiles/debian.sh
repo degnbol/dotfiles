@@ -11,3 +11,7 @@ sudo apt install fonts-powerline
 
 # power management
 sudo apt install laptop-mode-tools
+
+# maybe java development kit?
+sudo apt install default-jdk
+
