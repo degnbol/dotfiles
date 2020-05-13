@@ -1,0 +1,9 @@
+{
+    "del" : "Delete|Ctrl+Backspace|Shift+Delete",
+    "duplicateSelection" : "Ctrl+D",
+    "movelinesdown" : "Ctrl+Shift+Down",
+    "movelinesup" : "Ctrl+Shift+Up",
+    "removeline" : "Ctrl+Backspace",
+    "selecttoend" : "",
+    "selecttostart" : ""
+}
