@@ -45,7 +45,7 @@ setopt autocd
 export EDITOR=nvim
 
 # vi prompt keybindings that are copied from normal emacs input. This is relevant since we are using vi-mode with antigen
-source ~/.bindvi
+source ~/.vimode
 
 source ~/.aliases
 
