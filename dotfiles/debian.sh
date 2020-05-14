@@ -40,3 +40,6 @@ sudo snap install code --classic
 
 sudo snap refresh
 
+# cloud services
+sudo apt install rclone
+
