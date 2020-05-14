@@ -37,9 +37,13 @@ sudo apt install snapd
 # classic means not in sandbox
 sudo snap install pycharm-community --classic
 sudo snap install code --classic
-
 sudo snap refresh
 
 # cloud services
 sudo apt install rclone
+
+# email
+sudo apt install thunderbird
+
+sudo apt install redshift-gtk
 
