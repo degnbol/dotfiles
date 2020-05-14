@@ -1,0 +1,4 @@
+# install julia extension
+# synthwave theme with ctrl+p then paste
+ext install RobbOwen.synthwave-vscode
+
