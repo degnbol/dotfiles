@@ -7,3 +7,7 @@ antigen
 powerline
 p10k
 miniconda3
+
+# fonts
+https://github.com/belluzj/fantasque-sans#installation
+

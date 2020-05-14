@@ -9,7 +9,6 @@ au FocusGained,BufEnter * :silent! !
 " use Unicode
 set encoding=utf-8
 set fenc=utf-8
-set fencs=iso-2022-jp,euc-jp,cp932
 
 " errors flash screen rather than emit beep
 set visualbell
@@ -88,7 +87,24 @@ highlight CursorLine ctermbg=None
 autocmd InsertEnter * highlight  CursorLine ctermbg=17 ctermfg=None
 autocmd InsertLeave * highlight  CursorLine ctermbg=None ctermfg=None
 
-" colors
 syntax enable
-" set background=dark
+
+
+call plug#begin('~/.config/nvim/plugged')
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+" 'on' means it is loaded when first toggled
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+" theme
+Plug 'tomasiser/vim-code-dark'
+call plug#end()
+
+" ctrl+o toggles file tree
+map <C-o> :NERDTreeToggle<CR>
+
+colorscheme codedark
+let g:airline_theme = 'codedark'
+
+set enc=utf-8
+set guifont=Powerline_Consolas:h11
 
