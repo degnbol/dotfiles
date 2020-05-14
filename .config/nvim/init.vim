@@ -96,15 +96,14 @@ Plug 'vim-airline/vim-airline-themes'
 " 'on' means it is loaded when first toggled
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 " theme
-Plug 'tomasiser/vim-code-dark'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 " ctrl+o toggles file tree
 map <C-o> :NERDTreeToggle<CR>
 
-colorscheme codedark
-let g:airline_theme = 'codedark'
 
-set enc=utf-8
-set guifont=Powerline_Consolas:h11
+let g:gruvbox_contrast_dark = 'hard'
+colorscheme gruvbox
+autocmd vimenter * colorscheme gruvbox
 

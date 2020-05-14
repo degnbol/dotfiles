@@ -32,7 +32,7 @@ sudo apt install linux-cpupower
 
 sudo apt install default-jdk
 
-# snap app store for linux with non typical apps such as pycharm
+# snap app store for linux with non typical apps such as pycharm. run programs with snap run <name>
 sudo apt install snapd
 # classic means not in sandbox
 sudo snap install pycharm-community --classic

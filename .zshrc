@@ -56,5 +56,3 @@ source ~/.aliases
 export PATH="/sbin:$PATH"
 export PATH="$PATH:/home/degnbol/.local/bin"
 
-conda activate py37
-

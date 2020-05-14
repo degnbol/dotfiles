@@ -10,4 +10,5 @@ miniconda3
 
 # fonts
 https://github.com/belluzj/fantasque-sans#installation
+https://github.com/mozilla/Fir://github.com/mozilla/Fira
 
