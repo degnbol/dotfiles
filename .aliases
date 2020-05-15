@@ -17,6 +17,7 @@ alias 'gitr'='git remove'
 alias 'gitam'='git add `git status --short -uno | grep "^.M" | cut -c4- `'
 alias 'gitc'='git commit -m'
 alias 'gitp'='git push'
+alias 'gitd'='git diff'
 
 ### the rest are debian specific
 

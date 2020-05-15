@@ -10,27 +10,27 @@ sudo locale-gen en_DK.UTF-8
 sudo apt install curl wget rename git
 sudo apt install python-pip python3-pip
 
-sudo apt install flatpak
+sudo apt install flatpak -y
 # add repo
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 sudo apt install fonts-powerline
 
-sudo apt install neovim
+sudo apt install neovim -y
 # install plug-vim https://github.com/junegunn/vim-plug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 
-sudo apt install r-base
-sudo apt install julia
+sudo apt install r-base -y
+sudo apt install julia -y
 # install Rstudio from https://rstudio.com/products/rstudio/download/#download
 
 # power management
-sudo apt install laptop-mode-tools
-sudo apt install linux-cpupower
+sudo apt install laptop-mode-tools -y
+sudo apt install linux-cpupower -y
 
-sudo apt install default-jdk
+sudo apt install default-jdk -y
 
 # snap app store for linux with non typical apps such as pycharm. run programs with snap run <name>
 sudo apt install snapd
@@ -40,10 +40,9 @@ sudo snap install code --classic
 sudo snap refresh
 
 # cloud services
-sudo apt install rclone
+sudo apt install rclone -y
 
-# email
-sudo apt install thunderbird
-
-sudo apt install redshift-gtk
+sudo apt install thunderbird -y
+sudo apt install htop -y
+sudo apt install redshift-gtk -y
 
