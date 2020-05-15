@@ -1,0 +1,10 @@
+    <layout>
+      <configItem>
+        <name>custom</name>
+        <shortDescription>custom</shortDescription>
+        <description>custom</description>
+        <languageList>
+          <iso639Id>eng</iso639Id>
+        </languageList>
+      </configItem>
+    </layout>
