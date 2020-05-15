@@ -2,6 +2,7 @@ default alphanumeric_keys
 xkb_symbols "custom" {
 
     name[Group1]= "custom";
+    include "level3(lalt_switch)"
 
     key <LSGT> {	[ grave,    asciitilde, numbersign, numbersign  ]   };
     key <TLDE> {	[ asciicircum, dollar, percent, percent	        ]	};
@@ -51,11 +52,10 @@ xkb_symbols "custom" {
     key <AB06> {	[	  n,	N,  Greek_nu,       N       	   	]	};
     key <AB07> {	[	  m,	M,  Greek_mu,       M            	]	};
     key <AB08> {	[ comma, less,  parenleft,      parenleft	    ]	};
-    key <AB09> {	[period, greater                        		]	};
-    key <AB10> {	[ slash, question,  parenright, parenright      ]	};
+    key <AB09> {	[period, greater, parenright,   parenright 		]	};
+    key <AB10> {	[ slash, question,                              ]	};
 
     key <BKSL> {	[ backslash, bar, asterisk,     asterisk    	]	};
 
-    include "level3(ralt_switch)"
 };
 
