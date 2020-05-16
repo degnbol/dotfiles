@@ -27,8 +27,7 @@ sudo apt install julia -y
 # install Rstudio from https://rstudio.com/products/rstudio/download/#download
 
 # power management
-sudo apt install laptop-mode-tools -y
-sudo apt install linux-cpupower -y
+sudo apt install laptop-mode-tools linux-cpupower htop intel-gpu-tools -y
 
 sudo apt install default-jdk -y
 
