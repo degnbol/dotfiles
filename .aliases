@@ -9,12 +9,11 @@ alias l='less -S'
 
 alias chmodx='chmod +x'
 
-
 # git
 alias 'gits'='git status -uno'
 alias 'gita'='git add'
 alias 'gitr'='git remove'
-alias 'gitam'='git add `git status --short -uno | grep "^.M" | cut -c4- `'
+alias 'gitam'=$'git add `git status --short -uno | grep "^.M" | awk \'{print $NF}\' `'
 alias 'gitc'='git commit -m'
 alias 'gitp'='git push'
 alias 'gitd'='git diff'
