@@ -21,16 +21,12 @@ sudo apt install neovim -y
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
-
-sudo apt install r-base -y
-sudo apt install julia -y
-# install Rstudio from https://rstudio.com/products/rstudio/download/#download
-
 # power management
 sudo apt install laptop-mode-tools linux-cpupower htop intel-gpu-tools -y
 # see gpu usage with sudo intel_gpu_top
 
-sudo apt install default-jdk -y
+sudo apt install r-base julia default-jdk -y
+# install Rstudio from https://rstudio.com/products/rstudio/download/#download
 
 # snap app store for linux with non typical apps such as pycharm. run programs with snap run <name>
 sudo apt install snapd
@@ -43,6 +39,5 @@ sudo snap refresh
 sudo apt install rclone -y
 
 sudo apt install thunderbird -y
-sudo apt install htop -y
 sudo apt install redshift-gtk -y
 

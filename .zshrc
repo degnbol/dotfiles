@@ -53,6 +53,6 @@ source ~/.vimode
 
 source ~/.aliases
 
-export PATH="/sbin:$PATH"
-export PATH="$PATH:/home/degnbol/.local/bin"
+export PATH="/sbin:$PATH:/home/degnbol/.local/bin"
+export PATH="$PATH:$HOME/projects/degnlib"
 
