@@ -28,6 +28,7 @@ sudo apt install julia -y
 
 # power management
 sudo apt install laptop-mode-tools linux-cpupower htop intel-gpu-tools -y
+# see gpu usage with sudo intel_gpu_top
 
 sudo apt install default-jdk -y
 
