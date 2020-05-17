@@ -22,8 +22,10 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # power management
-_ apt install tlp thermald linux-cpupower htop intel-gpu-tools -y
+_ apt install tlp thermald linux-cpupower htop intel-gpu-tools powertop -y
 # see gpu usage with sudo intel_gpu_top
+_ powertop --calibrate
+_ tlp start
 
 _ apt install r-base julia default-jdk -y
 # install Rstudio from https://rstudio.com/products/rstudio/download/#download
