@@ -95,6 +95,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " 'on' means it is loaded when first toggled
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'valloric/youcompleteme'
+Plug 'tpope/vim-fugitive'
 " theme
 Plug 'morhetz/gruvbox'
 call plug#end()
