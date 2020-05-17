@@ -9,4 +9,8 @@ wget -qO- https://raw.githubusercontent.com/gusbemacbe/suru-plus/master/install.
 # some applications will change the audio level. Super annoying, they might set headphone level to 100%.
 # fix it by changing flat-volumes from default yes to no
 _ sed -Ei 's/;? ?flat-volumes.*/flat-volumes = no/' /etc/pulse/daemon.conf
+# you can restart pulseaudio to get immidiate effect
+systemctl --user restart pulseaudio.service
+systemctl --user restart pulseaudio.socket
+
 
