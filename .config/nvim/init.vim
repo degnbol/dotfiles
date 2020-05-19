@@ -104,6 +104,8 @@ call plug#end()
 " ctrl+o toggles file tree
 map <C-o> :NERDTreeToggle<CR>
 
+" air-line use powerline symbols
+let g:airline_powerline_fonts = 1
 
 let g:gruvbox_contrast_dark = 'hard'
 colorscheme gruvbox
