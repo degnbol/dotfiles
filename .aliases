@@ -10,6 +10,7 @@ alias l='less -S'
 alias chmodx='chmod +x'
 
 # git
+alias 'gitl'='git pull'
 alias 'gits'='git status -uno'
 alias 'gita'='git add'
 alias 'gitr'='git remove'
