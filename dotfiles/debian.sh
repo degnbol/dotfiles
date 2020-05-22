@@ -27,17 +27,21 @@ _ apt install tlp thermald linux-cpupower htop intel-gpu-tools powertop -y
 _ powertop --calibrate
 _ tlp start
 
-_ apt install r-base julia default-jdk -y
+_ apt install r-base default-jdk -y
 # install Rstudio from https://rstudio.com/products/rstudio/download/#download
 
 # snap app store for linux with non typical apps such as pycharm. run programs with snap run <name>
 _ apt install snapd
-export PATH="$PATH:/bin/snap"
 # classic means not in sandbox
 _ snap install pycharm-community --classic
 _ snap install code --classic
 _ snap install discord mailspring cpufreq
+_ snap install julia-mrcinv --classic  # unofficial snap since the official julia snap is not current stable version but long term supported version
 _ snap refresh
+
+_ ln -s /snap/bin/julia{-mrcinv,}  # link julia to the unofficial julia
+# install packages
+/snap/bin/julia -e 'using Pkg; Pkg.add.(["ArgParse", "Statistics", "DifferentialEquations", "DiffEqCallbacks", "LinearAlgebra", "SparseArrays", "Fire", "NamedTupleTools", "DelimitedFiles", "DataFrames", "Test", "Distributions", "Formatting", "Flux", "Dates", "Logging"])'
 
 # cloud services
 _ apt install rclone -y

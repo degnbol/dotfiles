@@ -56,4 +56,5 @@ source ~/.aliases
 export PATH="/sbin:$PATH:/home/degnbol/.local/bin"
 export PATH="$PATH:$HOME/projects/degnlib"
 export PYTHONPATH="$PYTHONPATH:$HOME/projects/degnlib"
+export PATH="$PATH:/snap/bin"
 
