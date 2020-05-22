@@ -97,6 +97,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'valloric/youcompleteme'
 Plug 'tpope/vim-fugitive'
+Plug 'metakirby5/codi.vim'
+Plug 'julialang/julia-vim'
 " theme
 Plug 'morhetz/gruvbox'
 call plug#end()
@@ -106,6 +108,10 @@ map <C-o> :NERDTreeToggle<CR>
 
 " air-line use powerline symbols
 let g:airline_powerline_fonts = 1
+if !exists('g:airline_symbols')
+let g:airline_symbols = {}
+endif
+let g:airline_symbols.notexists = ' ∄'
 
 let g:gruvbox_contrast_dark = 'hard'
 colorscheme gruvbox
