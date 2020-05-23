@@ -5,7 +5,9 @@ alias la='exa -a'
 alias lla='exa -la'
 alias lal='exa -la'
 
-alias l='less -S'
+# default less flags: -R was already default, -S is no-wrap, M is verbose info line at bottom, u is showing carriage return as a visible char.
+export LESS="-RSMu"
+alias l='less'
 
 alias suvi='sudoedit'
 alias _vi='sudoedit'
