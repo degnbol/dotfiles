@@ -23,6 +23,6 @@ _ apt install xserver-xorg-input-synaptics
 # set min pressure factor 0, noise cancellation 50.
 # also install https://github.com/bulletmark/libinput-gestures so you can e.g. swipe 3 fingers up to present windows
 # after install move a small script to pm sleep.d folder so the service is restartet after hibernation, where it otherwise stops working.
-_ mv libinput-gestures etc/pm/sleep.d/
+_ cp libinput-gestures etc/pm/sleep.d/
 
 
