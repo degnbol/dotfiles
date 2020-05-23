@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# libinput-gestures has to be restartet when resuming or thawing
+
+case "${1}" in
+        resume|thaw)
+		libinput-gestures restart
+        ;;
+esac
+

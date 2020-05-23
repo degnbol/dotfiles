@@ -7,6 +7,9 @@ alias lal='exa -la'
 
 alias l='less -S'
 
+alias suvi='sudoedit'
+alias _vi='sudoedit'
+
 alias chmodx='chmod +x'
 
 # git
