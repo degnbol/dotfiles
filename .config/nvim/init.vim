@@ -99,6 +99,7 @@ Plug 'valloric/youcompleteme'
 Plug 'tpope/vim-fugitive'
 Plug 'metakirby5/codi.vim'
 Plug 'julialang/julia-vim'
+Plug 'joom/latex-unicoder.vim'
 " theme
 Plug 'morhetz/gruvbox'
 call plug#end()
