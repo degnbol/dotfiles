@@ -31,7 +31,7 @@ _vi /etc/default/tlp
 _ tlp start
 # make sure it is running and check status with
 _ systemctl status tlp
-_ tlp-stat | l
+_ tlp-stat | l  # all cpu policies and governors should say power and powersave
 
 _ apt install r-base default-jdk -y
 # install Rstudio from https://rstudio.com/products/rstudio/download/#download
