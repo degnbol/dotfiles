@@ -114,6 +114,13 @@ let g:airline_symbols = {}
 endif
 let g:airline_symbols.notexists = ' ∄'
 
+" let latex unicoder interrupt insert mode
+let g:unicoder_cancel_insert = 1
+" use ctrl+\ instead of the default ctrl+l (l for latex)
+nnoremap <C-\> :call unicoder#start(0)<CR>
+inoremap <C-\> <Esc>:call unicoder#start(1)<CR>
+vnoremap <C-\> :<C-u>call unicoder#selection()<CR>
+
 let g:gruvbox_contrast_dark = 'hard'
 colorscheme gruvbox
 autocmd vimenter * colorscheme gruvbox
