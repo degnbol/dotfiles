@@ -22,10 +22,16 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # power management
-_ apt install tlp thermald linux-cpupower htop intel-gpu-tools powertop -y
+_ apt install tlp tlp-rdw thermald linux-cpupower htop intel-gpu-tools powertop -y
 # see gpu usage with sudo intel_gpu_top
 _ powertop --calibrate
+# force powersave mode at all times. It is referred to as BAT for battery, in contrast to AC mode.
+# do so by changing settings to "TLP_DEFAULT_MODE=BAT" and "TLP_PERSISTENT_DEFAULT=1":
+_vi /etc/default/tlp
 _ tlp start
+# make sure it is running and check status with
+_ systemctl status tlp
+_ tlp-stat | l
 
 _ apt install r-base default-jdk -y
 # install Rstudio from https://rstudio.com/products/rstudio/download/#download
