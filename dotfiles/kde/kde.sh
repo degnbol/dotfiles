@@ -19,7 +19,7 @@ _ apt install xinput
 # https://bill.harding.blog/2018/01/07/linux-with-a-macbook-touchpad-feel-pt-2/
 _ apt install xserver-xorg-input-synaptics
 # you should be able to set settings in KDE system settings -> input devices -> touchpad.
-# disable mouse click emulation, set vertical scrolling to 60 mm and 7 mm, disable coasting and circular scrolling, set min pointer speed =0, and max 1/3 of full, about the same for acceleration.
+# disable mouse click emulation, set reverse scrolling for both directions, set vertical scrolling to 60 mm and 7 mm, disable coasting and circular scrolling, set min pointer speed =0, and max 1/3 of full, about the same for acceleration.
 # set min pressure factor 0, noise cancellation 50.
 # also install https://github.com/bulletmark/libinput-gestures so you can e.g. swipe 3 fingers up to present windows
 # after install move a small script to pm sleep.d folder so the service is restartet after hibernation, where it otherwise stops working.

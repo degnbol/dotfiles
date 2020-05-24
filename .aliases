@@ -5,8 +5,9 @@ alias la='exa -a'
 alias lla='exa -la'
 alias lal='exa -la'
 
-# default less flags: -R was already default, -S is no-wrap, M is verbose info line at bottom, u is showing carriage return as a visible char.
-export LESS="-RSMu"
+# default less flags: -R was already default, -S is no-wrap, -M is verbose info line at bottom. 
+# -u can be used for showing carriage return as a visible char but ruins colored man.
+export LESS="-RSM"
 alias l='less'
 
 alias suvi='sudoedit'
