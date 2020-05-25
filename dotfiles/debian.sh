@@ -47,7 +47,7 @@ _ snap refresh
 
 _ ln -s /snap/bin/julia{-mrcinv,}  # link julia to the unofficial julia
 # install packages
-/snap/bin/julia -e 'using Pkg; Pkg.add.(["Revise", "ArgParse", "Statistics", "DifferentialEquations", "DiffEqCallbacks", "LinearAlgebra", "SparseArrays", "Fire", "NamedTupleTools", "DelimitedFiles", "DataFrames", "Test", "Distributions", "Formatting", "Flux", "Dates", "Logging"])'
+/snap/bin/julia -e 'using Pkg; Pkg.add.(["Revise", "ArgParse", "Statistics", "DifferentialEquations", "DiffEqCallbacks", "LinearAlgebra", "SparseArrays", "Fire", "NamedTupleTools", "DelimitedFiles", "DataStructures", "DataFrames", "Test", "Distributions", "Formatting", "Flux", "Dates", "Logging"])'
 
 # cloud services
 _ apt install rclone -y
