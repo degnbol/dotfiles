@@ -58,4 +58,8 @@ _ apt install redshift-gtk -y
 # :set -u https://accounts.google.com/* content.headers.user_agent 'Mozilla/5.0 (X11; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
 
 
+_ apt install fonts-firacode
+# go to https://github.com/tonsky/FiraCode to find install instructions for various IDEs. 
+# install Dark ++ Italic theme in vc code
+
 

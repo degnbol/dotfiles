@@ -3,7 +3,7 @@ Description=Run custom commands after suspension or hibernation
 After=suspend.target hibernate.target hybrid-sleep.target suspend-then-hibernate.target
 
 [Service]
-ExecStart=/home/degnbol/dotfiles/resume_custom.sh
+ExecStart=/home/degnbol/dotfiles/hibernation/resume_custom.sh
 
 [Install]
 WantedBy=suspend.target hibernate.target hybrid-sleep.target suspend-then-hibernate.target
