@@ -121,10 +121,15 @@ let g:ycm_max_num_identifier_candidates = 5
 " only use tab, not arrow so we can navigate with those
 let g:ycm_key_list_select_completion = ['<TAB>']
 let g:ycm_key_list_previous_completion = ['<S-TAB>']
-" Ctrl+Y is the default keybind for closing Pop-Up Menu so we emulate a press
-" to that when using arrow keys
-inoremap <expr> <Down>     pumvisible() ? "\<C-Y>\<Down>" : "\<Down>"
-inoremap <expr> <Up>       pumvisible() ? "\<C-Y>\<Up>" : "\<Up>"
+" we have to remap so when Pop Up Menu is visible we go to normal mode and
+" back quickly. \<C-E>\<C-O> followed by a key let's you exit insert mode,
+" press that key and return to insert mode. This exits the PUM. Exiting to
+" normal mode moved the cursor to block, which moves it's position wrong if it
+" is at the end of the line and you want to left. I fixed it by moving first.
+inoremap <expr> <Down>     pumvisible() ? "\<C-E>\<C-O>j"            : "\<Down>"
+inoremap <expr> <Up>       pumvisible() ? "\<C-E>\<C-O>k"            : "\<Up>"
+inoremap <expr> <Left>     pumvisible() ? "\<Left>\<C-E>\<C-O><ESC>" : "\<Left>"
+inoremap <expr> <Right>    pumvisible() ? "\<C-E>\<C-O>l"            : "\<Right>"
 " Default is Ctrl+space <C-Space>
 let g:ycm_key_invoke_completion = '<S-Space>' 
 
