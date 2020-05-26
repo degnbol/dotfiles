@@ -126,10 +126,10 @@ let g:ycm_key_list_previous_completion = ['<S-TAB>']
 " press that key and return to insert mode. This exits the PUM. Exiting to
 " normal mode moved the cursor to block, which moves it's position wrong if it
 " is at the end of the line and you want to left. I fixed it by moving first.
-inoremap <expr> <Down>     pumvisible() ? "\<C-E>\<C-O>j"            : "\<Down>"
-inoremap <expr> <Up>       pumvisible() ? "\<C-E>\<C-O>k"            : "\<Up>"
-inoremap <expr> <Left>     pumvisible() ? "\<Left>\<C-E>\<C-O><ESC>" : "\<Left>"
-inoremap <expr> <Right>    pumvisible() ? "\<C-E>\<C-O>l"            : "\<Right>"
+inoremap <expr> <Down>     pumvisible() ? "\<C-E>\<C-O>j"             : "\<Down>"
+inoremap <expr> <Up>       pumvisible() ? "\<C-E>\<C-O>k"             : "\<Up>"
+inoremap <expr> <Left>     pumvisible() ? "\<Left>\<C-E>\<C-O><ESC>"  : "\<Left>"
+inoremap <expr> <Right>    pumvisible() ? "\<Right>\<C-E>\<C-O><ESC>" : "\<Right>"
 " Default is Ctrl+space <C-Space>
 let g:ycm_key_invoke_completion = '<S-Space>' 
 
