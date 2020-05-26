@@ -39,9 +39,7 @@ unset __conda_setup
 HISTFILE=~/.zsh_history
 HISTSIZE=5000
 SAVEHIST=10000
-# This option allows history between different sessions to be appended to old history (so we don't forget commands from old sessions).
-# It also includes from parallel sessions (tabs) but not at the same time, so each tab will cycle their own history first.
-setopt INC_APPEND_HISTORY_TIME
+setopt APPEND_HISTORY
 
 # cd to folder simply by writing folder name without cd
 setopt autocd
