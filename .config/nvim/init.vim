@@ -114,6 +114,22 @@ let g:airline_symbols = {}
 endif
 let g:airline_symbols.notexists = ' ∄'
 
+" youcompleteme settings to improve performance
+let g:ycm_min_num_identifier_candidate_chars = 3
+let g:ycm_max_num_candidates = 10
+let g:ycm_max_num_identifier_candidates = 5
+" only use tab, not arrow so we can navigate with those
+let g:ycm_key_list_select_completion = ['<TAB>']
+let g:ycm_key_list_previous_completion = ['<S-TAB>']
+" Ctrl+Y is the default keybind for closing Pop-Up Menu so we emulate a press
+" to that when using arrow keys
+inoremap <expr> <Down>     pumvisible() ? "\<C-Y>\<Down>" : "\<Down>"
+inoremap <expr> <Up>       pumvisible() ? "\<C-Y>\<Up>" : "\<Up>"
+" Default is Ctrl+space <C-Space>
+let g:ycm_key_invoke_completion = '<S-Space>' 
+
+
+
 " let latex unicoder interrupt insert mode
 let g:unicoder_cancel_insert = 1
 " use ctrl+\ instead of the default ctrl+l (l for latex)
