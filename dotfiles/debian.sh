@@ -43,9 +43,11 @@ _ snap install pycharm-community --classic
 _ snap install code --classic
 _ snap install discord mailspring cpufreq
 _ snap install julia-mrcinv --classic  # unofficial snap since the official julia snap is not current stable version but long term supported version
+_ snap install atom --classic
 _ snap refresh
 
 _ ln -s /snap/bin/julia{-mrcinv,}  # link julia to the unofficial julia
+# ATOM note: link atom julia path to /snap/julia-mrcinv/current/bin/julia and you probably want the fallback rendered "dom"
 # install packages
 /snap/bin/julia -e 'using Pkg; Pkg.add.(["Revise", "ArgParse", "Statistics", "DifferentialEquations", "DiffEqCallbacks", "LinearAlgebra", "SparseArrays", "Fire", "NamedTupleTools", "DelimitedFiles", "DataStructures", "DataFrames", "Test", "Distributions", "Formatting", "Flux", "Dates", "Logging"])'
 
