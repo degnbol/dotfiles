@@ -47,7 +47,6 @@ _ snap install code --classic
 _ snap install discord mailspring cpufreq
 _ snap install julia-mrcinv --classic  # unofficial snap since the official julia snap is not current stable version but long term supported version
 _ snap install atom --classic
-_ snap install skype --classic
 _ snap refresh
 
 _ ln -s /snap/bin/julia{-mrcinv,}  # link julia to the unofficial julia
@@ -67,5 +66,10 @@ _ apt install redshift-gtk -y
 _ apt install fonts-firacode
 # go to https://github.com/tonsky/FiraCode to find install instructions for various IDEs. 
 # install Dark ++ Italic theme in vc code
+
+
+wget https://go.skype.com/skypeforlinux-64.deb
+_ apt install ./skypeforlinux-64.deb -y
+rm skypeforlinux-64.deb
 
 
