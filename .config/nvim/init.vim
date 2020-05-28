@@ -77,6 +77,7 @@ set clipboard=unnamedplus
 " disable copying when using change (c) command in visual mode. works by
 " changing c to paste to _ (null register)
 vnoremap c "_c
+nnoremap c "_c
 
 
 " Show character column
