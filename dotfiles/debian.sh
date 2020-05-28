@@ -7,7 +7,7 @@ _ apt upgrade
 # generate locale for DK standards so they are available for use.
 _ locale-gen en_DK.UTF-8
 
-_ apt install curl wget rename git
+_ apt install curl wget rename git xz-utils cpio
 _ apt install python-pip python3-pip
 
 _ apt install flatpak -y
@@ -67,9 +67,5 @@ _ apt install fonts-firacode
 # go to https://github.com/tonsky/FiraCode to find install instructions for various IDEs. 
 # install Dark ++ Italic theme in vc code
 
-
-wget https://go.skype.com/skypeforlinux-64.deb
-_ apt install ./skypeforlinux-64.deb -y
-rm skypeforlinux-64.deb
 
 
