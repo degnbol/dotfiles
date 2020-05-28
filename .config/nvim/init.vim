@@ -74,6 +74,10 @@ set laststatus=2 statusline=%F
 " http://vim.wikia.com/wiki/Accessing_the_system_clipboard
 set clipboard=unnamedplus
 
+" disable copying when using change (c) command in visual mode. works by
+" changing c to paste to _ (null register)
+vnoremap c "_c
+
 
 " Show character column
 " highlight ColorColumn ctermbg=DarkBlue
@@ -145,4 +149,5 @@ vnoremap <C-\> :<C-u>call unicoder#selection()<CR>
 let g:gruvbox_contrast_dark = 'hard'
 colorscheme gruvbox
 autocmd vimenter * colorscheme gruvbox
+
 

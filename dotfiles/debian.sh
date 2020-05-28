@@ -24,7 +24,7 @@ _ apt install neovim -y
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
-# power management
+# power management. thermald helps avoid overheating https://unix.stackexchange.com/questions/401268/cpu-overheating-on-linux-but-not-on-windows-while-doing-the-same-things
 _ apt install tlp tlp-rdw thermald linux-cpupower htop intel-gpu-tools powertop -y
 # see gpu usage with sudo intel_gpu_top
 _ powertop --calibrate
