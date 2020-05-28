@@ -47,7 +47,8 @@ setopt autocd
 export EDITOR=nvim
 
 # vi prompt keybindings that are copied from normal emacs input. This is relevant since we are using vi-mode with antigen
-source ~/.vimode
+#source ~/.vimode  # I gave up on vi mode since it broke the up arrow history search and since you can just use fc to fix command
+# vi mode is also controlled with the vi-mode bundle in ~/antigen/antigen.sh 
 
 source ~/.aliases
 
