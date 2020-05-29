@@ -16,6 +16,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 _ flatpak install mendeley
 _ flatpak install dropbox
+# you can run it from ctrl+search dropbox or from flatpak run com.dropbox.client
 
 _ apt install fonts-powerline
 
