@@ -77,4 +77,5 @@ _ git clone https://github.com/EvanPurkhiser/rEFInd-minimal.git /boot/efi/EFI/re
 # then add the line "include themes/rEFInd-minimal/theme.conf" at the end:
 _vi /boot/efi/EFI/refind/refind.conf
 # you can remove "tags" (boot entries) by pressing minus in the boot menu. They can also be restored in the boot menu but not when the minimal theme is active.
+# you can boot into them to see where they lead. If there are two for macOS they are just duplicates and one (preboot) can be hidden to avoid clutter.
 
