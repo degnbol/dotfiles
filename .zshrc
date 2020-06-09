@@ -58,6 +58,6 @@ export PYTHONPATH="$PYTHONPATH:$HOME/projects/degnlib"
 export PATH="$PATH:/snap/bin"
 
 
-#conda activate py38
+conda activate py38
 
 
