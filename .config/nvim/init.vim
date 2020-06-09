@@ -139,7 +139,6 @@ inoremap <expr> <Right>    pumvisible() ? "\<Right>\<C-O>\<Esc>" : "\<Right>"
 let g:ycm_key_invoke_completion = '<S-Space>' 
 
 
-
 " let latex unicoder interrupt insert mode
 let g:unicoder_cancel_insert = 1
 " use ctrl+\ instead of the default ctrl+l (l for latex)
