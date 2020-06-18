@@ -9,6 +9,8 @@ _ locale-gen en_DK.UTF-8
 
 _ apt install curl wget rename git xz-utils cpio
 _ apt install python-pip python3-pip
+_ apt install git-lfs
+git lfs install
 
 _ apt install flatpak -y
 # add repo
