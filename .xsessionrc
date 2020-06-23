@@ -1,0 +1,2 @@
+xinput set-prop "Logitech M705" "Device Accel Constant Deceleration" 1.8
+xinput set-prop "Logitech M705" "Device Accel Adaptive Deceleration" 1.8

@@ -34,3 +34,4 @@ alias macos='sudo ./apfs-fuse -o allow_other /dev/nvme0n1p2 /media/degnbol/macos
 # clipboard
 alias clip='xclip -sel clip'
 alias open='xdg-open'
+alias zoom='zoom-client'
