@@ -50,6 +50,7 @@ _ snap install code --classic
 _ snap install discord mailspring cpufreq
 _ snap install julia-mrcinv --classic  # unofficial snap since the official julia snap is not current stable version but long term supported version
 _ snap install atom --classic
+_ snap install zoom-client
 _ snap refresh
 
 _ ln -s /snap/bin/julia{-mrcinv,}  # link julia to the unofficial julia
