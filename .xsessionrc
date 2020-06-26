@@ -1,3 +1,5 @@
 # set mouse sensitivity. Default=1. Lower value is more sensitive.
 xinput set-prop "Logitech M705" "Device Accel Constant Deceleration" 1.5
 xinput set-prop "Logitech M705" "Device Accel Adaptive Deceleration" 1.5
+xinput set-prop "bcm5974" "Device Accel Constant Deceleration" 3
+xinput set-prop "bcm5974" "Device Accel Adaptive Deceleration" 3
