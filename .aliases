@@ -1,3 +1,4 @@
+#!/usr/bin/env zsh
 # basic file exploring
 alias ls='exa'
 alias ll='exa -l'
@@ -9,6 +10,9 @@ alias lal='exa -la'
 # -u can be used for showing carriage return as a visible char but ruins colored man.
 export LESS="-RSM"
 alias l='less'
+function le() {
+    sed 's/\t/ \t/g' $1 | column -ts$'\t' | l
+}
 
 alias suvi='sudoedit'
 alias _vi='sudoedit'
