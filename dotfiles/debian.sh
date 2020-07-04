@@ -41,6 +41,9 @@ _ tlp-stat | l  # all cpu policies and governors should say power and powersave
 
 _ apt install r-base default-jdk -y
 # install Rstudio from https://rstudio.com/products/rstudio/download/#download
+# packages needed for tidyverse and maybe other things:
+_ apt install libcurl4-openssl-dev
+_ apt install libssl-dev
 
 # snap app store for linux with non typical apps such as pycharm. run programs with snap run <name>
 _ apt install snapd
