@@ -1,36 +1,84 @@
-#!/usr/bin/env zsh
-# basic file exploring
-alias ls='exa'
-alias ll='exa -l'
-alias la='exa -a'
-alias lla='exa -la'
-alias lal='exa -la'
+# https://gist.github.com/anonymous/a9055e30f97bd19645c2
+alias ls='exa --group-directories-first'
+alias la='exa -a --group-directories-first --classify'
+alias ll='exa -l --group-directories-first'
+alias lla='exa -al --group-directories-first --classify'
+alias lal='exa -al --group-directories-first --classify'
+alias lt='exa -T --group-directories-first --classify'
+alias lta='exa -aT --group-directories-first --classify'
+alias lat='exa -aT --group-directories-first --classify'
+
+# untracked normal instead of default (all) to hide many lines of untracked stuff
+alias gits='git status -uno'
+alias gita='git add'
+alias gitam='for file in $(git status -uno --short | grep "^.M" | cut -c4-); do git add $file; done'
+alias gitad='for file in $(git status -uno --short | grep "^.D" | cut -c4-); do git rm $file; done'
+alias gitr='git rm'
+function gitl {
+        git submodule foreach git pull origin master
+        git pull $@
+}
+alias gitb='git pull --rebase; git submodule update --rebase'
+alias gitp='git push'
+function gitc {
+	message="$@"
+	git commit -m $message
+}
+alias gito='git checkout --'
+alias gitd='git diff'
+
+alias chmodx='chmod -R 755'
 
 # default less flags: -R was already default, -S is no-wrap, -M is verbose info line at bottom. 
 # -u can be used for showing carriage return as a visible char but ruins colored man.
 export LESS="-RSM"
 alias l='less'
-function le() {
-    sed 's/\t/ \t/g' $1 | column -ts$'\t' | l
-}
 
+alias vi='nvim'
 alias suvi='sudoedit'
 alias _vi='sudoedit'
 
-alias chmodx='chmod +x'
+### others
 
-# git
-alias 'gitl'='git pull'
-alias 'gits'='git status -uno'
-alias 'gita'='git add'
-alias 'gitr'='git remove'
-alias 'gitam'=$'git add `git status --short -uno | grep "^.M" | awk \'{print $NF}\' `'
-alias 'gitc'='git commit -m'
-alias 'gitp'='git push'
-alias 'gitd'='git diff'
-alias 'gito'='git checkout --'
 
-### the rest are debian specific
+alias pymol='/Applications/PyMOL.app/Contents/MacOS/PyMOL'
+
+alias dtuvpn='sudo openconnect --no-dtls --user cdegma vpn.ait.dtu.dk'  # alternative: extra-vpn.ait.dtu.dk
+alias cwor='ssh -Y cdegma@192.38.13.42'
+
+
+### functions
+
+function le() {
+        awk 'BEGIN { FS = OFS = "\t" } { for(i=1; i<=NF; i++) if($i == "") $i = " " }; 1' $1 | column -ts $'\t' | l
+}
+function lec() {
+        awk 'BEGIN { FS = OFS = "," } { for(i=1; i<=NF; i++) if($i == "") $i = " " }; 1' $1 | column -ts ',' | l
+}
+function les() {
+        cat $1 | tr ' ' '\t' | le
+}
+
+function commu() {
+	if [[ "$1" == "1" ]]; then
+		choice="-23"
+	elif [[ "$1" == "2" ]]; then
+		choice="-13"
+	elif [[ "$1" == "both" || "$1" == "3" ]]; then
+		choice="-12"
+	else
+		choice="$1"
+	fi
+
+        comm $choice <(sort -u $2) <(sort -u $3)
+}
+
+function commul() {
+	commu $1 $2 $3 | wc -l
+}
+
+
+### debian specific
 
 # mount macos
 alias macos='sudo ./apfs-fuse -o allow_other /dev/nvme0n1p2 /media/degnbol/macos'
